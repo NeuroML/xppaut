@@ -8,8 +8,7 @@ License:        GPL
 URL:            http://www.math.pitt.edu/~bard/xpp/xpp.html
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Source0:        %{name}-%{version}.tar.gz
-Requires:       gcc
-BuildRequires:  libX11-devel
+BuildRequires:  gcc libX11-devel
 
 %define debug_package %{nil}
 
