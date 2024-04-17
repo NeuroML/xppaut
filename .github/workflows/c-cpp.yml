@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master", "develop", test_* ]
+  pull_request:
+    branches: [ "master", "develop", test_* ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    
+    - name: Make and install 
+      run: |
+         make
+         sudo make install
+
+    
+    - name: Print version info
+      run: |
+         xppaut -version
