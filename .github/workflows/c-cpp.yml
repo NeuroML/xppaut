@@ -15,5 +15,8 @@ jobs:
     - uses: actions/checkout@v4
 
     
-    - name: make
-      run: make
+    - name: make and install 
+      run: |
+         make
+         make install
+         xppaut -v
