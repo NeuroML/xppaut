@@ -18,5 +18,5 @@ jobs:
     - name: make and install 
       run: |
          make
-         make install
+         sudo make install
          xppaut -v
