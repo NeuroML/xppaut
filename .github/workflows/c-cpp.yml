@@ -15,8 +15,12 @@ jobs:
     - uses: actions/checkout@v4
 
     
-    - name: make and install 
+    - name: Make and install 
       run: |
          make
          sudo make install
-         xppaut -v
+
+    
+    - name: Print version info
+      run: |
+         xppaut -version
